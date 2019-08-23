@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-scm
 Version  : 1.8
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.4/maven-scm-plugin-1.9.4.jar
@@ -41,13 +41,14 @@ Source31  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provid
 Source32  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.9.4/maven-scm-provider-svnexe-1.9.4.jar
 Source33  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provider-svnexe/1.9.4/maven-scm-provider-svnexe-1.9.4.pom
 Source34  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-cvs/1.9.4/maven-scm-providers-cvs-1.9.4.pom
-Source35  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.9.4/maven-scm-providers-git-1.9.4.pom
-Source36  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.8/maven-scm-providers-svn-1.8.pom
-Source37  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.9.4/maven-scm-providers-svn-1.9.4.pom
-Source38  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.8/maven-scm-providers-1.8.pom
-Source39  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
-Source40  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
-Source41  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
+Source35  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.9.2/maven-scm-providers-git-1.9.2.pom
+Source36  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-git/1.9.4/maven-scm-providers-git-1.9.4.pom
+Source37  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.8/maven-scm-providers-svn-1.8.pom
+Source38  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers-svn/1.9.4/maven-scm-providers-svn-1.9.4.pom
+Source39  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.8/maven-scm-providers-1.8.pom
+Source40  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
+Source41  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
+Source42  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -189,26 +190,29 @@ cp %{SOURCE33} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/m
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-cvs/1.9.4
 cp %{SOURCE34} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-cvs/1.9.4/maven-scm-providers-cvs-1.9.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.2
+cp %{SOURCE35} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.2/maven-scm-providers-git-1.9.2.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.4
-cp %{SOURCE35} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.4/maven-scm-providers-git-1.9.4.pom
+cp %{SOURCE36} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.4/maven-scm-providers-git-1.9.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.8
-cp %{SOURCE36} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.8/maven-scm-providers-svn-1.8.pom
+cp %{SOURCE37} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.8/maven-scm-providers-svn-1.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.9.4
-cp %{SOURCE37} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.9.4/maven-scm-providers-svn-1.9.4.pom
+cp %{SOURCE38} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.9.4/maven-scm-providers-svn-1.9.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.8
-cp %{SOURCE38} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.8/maven-scm-providers-1.8.pom
+cp %{SOURCE39} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.8/maven-scm-providers-1.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.9.4
-cp %{SOURCE39} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
+cp %{SOURCE40} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8
-cp %{SOURCE40} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
+cp %{SOURCE41} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4
-cp %{SOURCE41} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
+cp %{SOURCE42} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
 
 
 %files
@@ -251,6 +255,7 @@ cp %{SOURCE41} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/m
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-provider-svnexe/1.9.4/maven-scm-provider-svnexe-1.9.4.jar
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-provider-svnexe/1.9.4/maven-scm-provider-svnexe-1.9.4.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-cvs/1.9.4/maven-scm-providers-cvs-1.9.4.pom
+/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.2/maven-scm-providers-git-1.9.2.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-git/1.9.4/maven-scm-providers-git-1.9.4.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.8/maven-scm-providers-svn-1.8.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers-svn/1.9.4/maven-scm-providers-svn-1.9.4.pom
