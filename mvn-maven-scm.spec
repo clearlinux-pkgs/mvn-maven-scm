@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-scm
 Version  : 1.8
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.4/maven-scm-plugin-1.9.4.jar
@@ -49,7 +49,8 @@ Source39  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-provid
 Source40  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.9.2/maven-scm-providers-1.9.2.pom
 Source41  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
 Source42  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
-Source43  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
+Source43  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.9.2/maven-scm-1.9.2.pom
+Source44  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -215,8 +216,11 @@ cp %{SOURCE41} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/m
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8
 cp %{SOURCE42} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.2
+cp %{SOURCE43} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.2/maven-scm-1.9.2.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4
-cp %{SOURCE43} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
+cp %{SOURCE44} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
 
 
 %files
@@ -267,6 +271,7 @@ cp %{SOURCE43} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/scm/m
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.9.2/maven-scm-providers-1.9.2.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm-providers/1.9.4/maven-scm-providers-1.9.4.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.8/maven-scm-1.8.pom
+/usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.2/maven-scm-1.9.2.pom
 /usr/share/java/.m2/repository/org/apache/maven/scm/maven-scm/1.9.4/maven-scm-1.9.4.pom
 
 %files license
