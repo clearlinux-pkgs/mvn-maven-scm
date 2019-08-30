@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-scm
 Version  : 1.8
-Release  : 8
+Release  : 9
 URL      : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/scm/maven-scm-api/1.8/maven-scm-api-1.8.jar
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-scm-plugin/1.9.2/maven-scm-plugin-1.9.2.jar
